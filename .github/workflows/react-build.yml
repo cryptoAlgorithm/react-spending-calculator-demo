@@ -43,7 +43,7 @@ jobs:
         run: yarn
       - name: Build React app
         env: 
-          PUBLIC_URL: ${{ steps.deployment.outputs.page_url }}
+          PUBLIC_URL: https://cryptoalgorithm.github.io/react-spending-calculator-demo/
         run: yarn build
 
       - name: Upload artifact
